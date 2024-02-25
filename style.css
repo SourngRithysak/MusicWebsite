@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+.container{
+    background: linear-gradient(to right, white, pink);
+}
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: cursive;
+    padding: 20px 15px;
+    transition: 0.5s ease-in-out;
+}
+.header.sticky{
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: default;
+    color: rgb(255, 147, 165);
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li .menu-a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-right: 20px;
+    font-weight: 200;
+    transition: 0.5s;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0px 30px 0 30px;
+    font-family: cursive;
+}
+.home-content{
+    font-size: 30px;
+    padding: 0 0 0 40px;
+}
+.home-content h2{
+    font-weight: 200;
+    padding: 10px 0 10px 0;
+}
+.home-content h1{
+    font-size: 80px;
+    font-weight: 600;
+    color: rgb(255, 147, 165);
+}
+.home-content h2 span{
+    color: rgb(255, 147, 165);
+}
+.home-content p{
+    font-size: 25px;
+    font-weight: 100;
+    color: gray;
+    padding-bottom: 20px;
+    margin: 10px 0 10px 20px;
+}
+.home .box .btn{
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: cursive;
+    color: rgb(255, 147, 165);
+    padding: 10px 25px;
+    border-radius: 35px;
+    border: 1px solid rgb(255, 147, 165);
+    background: transparent;
+    margin-left: 50px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+.home-img .play-img{
+    width: 650px;
+}
+.home .box .btn:hover{
+    background: rgb(255, 147, 165);
+    color: white;
+    border: none;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: cursive;
+    margin: 0 30px 0 30px;
+    cursor: default;
+}
+.about .about-img img{
+    width: 650px;
+}
+.about .about-content{
+    font-size: 30px;
+    margin-right: 50px;
+}
+.about .about-content h2{
+   font-size: 70px;
+   font-weight: bold; 
+}
+.about .about-content h2 span{
+    color: rgb(255, 147, 165);
+}
+.about .about-content h3{
+    font-size: 40px;
+    font-weight: 200;
+    color: rgb(255, 147, 165);
+    padding: 20px 0;
+    margin: 0 20px;
+}
+.about .about-content p{
+    font-size: 25px;
+    margin: 0 50px 0 30px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.about .about-content .about-btn{
+    font-family: cursive;
+    font-size: 30px;
+    padding: 10px 25px;
+    border-radius: 35px;
+    text-transform: uppercase;
+    color: rgb(255, 147, 165);
+    background: transparent;
+    border: 1px solid rgb(255, 147, 165);
+    transition: 0.5s;
+}
+.about .about-content .about-btn:hover{
+    background: rgb(255, 147, 165);
+    color: white;
+    border: none;
+}
+.title{
+    text-align: center;
+    font-size: 90px;
+    margin-bottom: 60px;
+    font-family: cursive;
+    color: white;
+}
+.title span{
+    color: rgb(255, 147, 165);
+}
+.player{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    margin: 0 50px 0 50px;
+}
+.player .card{
+    width: 300px;
+    background: #f1f3f4;
+    box-shadow: 0 10px 20px black;
+    border-radius: 5px;
+    margin: 20px;
+    transition: 0.5s;
+}
+.player .card:hover{
+    transform: translateY(-30px);
+}
+.player .card .img img{
+    height: 350px;
+    width: 100%;
+}
+.player .card .audio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player .card .audio audio{
+    width: 100%;
+    outline: none;
+}
+footer{
+    display: grid;
+    place-items: center;
+    background: black;
+    padding: 50px 0;
+    height: 40vh;
+}
+footer nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+footer nav ul li .footer-a{
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: cursive;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+footer nav ul li .footer-a:hover{
+    color: rgb(255, 147, 165);
+}
+footer p{
+    color: rgb(92, 92, 92);
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
